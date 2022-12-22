@@ -13,7 +13,7 @@ tls.DEFAULT_ECDH_CURVE;
 let payload = {};
 
 try {
-var proxies = fs.readFileSync("proxy.txt", 'utf-8').toString().replace(/\r/g, '').split('\n');
+var proxies = fs.readFileSync("proxy.txt", 'utf-8').toString().replace(/\r/g, '').split('\n'); //daudau
 } catch(error){
 console.log('  Không tìm thấy tệp proxy, "proxy.txt".');
 process.exit();
@@ -47,7 +47,7 @@ var UAs = fs.readFileSync('ua.txt', 'utf-8').replace(/\r/g, '').split('\n');
  }
 class TlsBuilder {
     constructor (socket){
-        this.curve = "GREASE:X25519:x25519"; // Default
+        this.curve = "GREASE:X25519:x25519"; // Default DauDau
         this.sigalgs = SignalsList;
         this.Opt = crypto.constants.SSL_OP_NO_RENEGOTIATION|crypto.constants.SSL_OP_NO_TICKET|crypto.constants.SSL_OP_NO_SSLv2|crypto.constants.SSL_OP_NO_SSLv3|crypto.constants.SSL_OP_NO_COMPRESSION|crypto.constants.SSL_OP_NO_RENEGOTIATION|crypto.constants.SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION|crypto.constants.SSL_OP_TLSEXT_PADDING|crypto.constants.SSL_OP_ALL|crypto.constants.SSLcom;
     }
@@ -67,9 +67,9 @@ class TlsBuilder {
         payload["Pragma"] = 'no-cache, no-store,private, max-age=0, must-revalidate';
         payload['client-control'] = 'max-age=43200, s-max-age=43200';
         payload['Upgrade-Insecure-Requests'] = 1;
-        payload['Accept'] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"; //'*/*';
+        payload['Accept'] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"; //'*/*'; //daudau
         payload['Accept-Encoding'] = 'gzip, deflate, br';
-        payload['Accept-Language'] = 'utf-8, iso-8859-1;q=0.5, *;q=0.1'
+        payload['Accept-Language'] = 'utf-8, iso-8859-1;q=0.5, *;q=0.1' //daudau
         payload[":path"] = parsed.path;
 
         const tunnel = http2.connect(parsed.href, {
@@ -101,7 +101,7 @@ class TlsBuilder {
 
 BuildTLS = new TlsBuilder();
 BuildTLS.Alert();
-const keepAliveAgent = new http.Agent({ keepAlive: true, maxSockets: Infinity, maxTotalSockets: Infinity, maxSockets: Infinity });
+const keepAliveAgent = new http.Agent({ keepAlive: true, maxSockets: Infinity, maxTotalSockets: Infinity, maxSockets: Infinity }); //daudau
 
 function Runner(){
 
