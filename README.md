@@ -1,6 +1,6 @@
 # HTTP2-Flooder
 
-Trình ngập http2 mới, bị rò rỉ bởi nhà phát triển
+Chương trình HTTP2 Flooder mới, bị rò rỉ bởi nhà phát triển
 
 ```
 curl -sL https://deb.nodesource.com/setup_16.x | sudo bash - sudo apt -y install nodejs
