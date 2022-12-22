@@ -1,7 +1,7 @@
 import os
 from os import name, system
 if name == 'nt':
-    system("title Đậu Đậu")
+    system("title Đậu Đậu - HTTP2 Tunnel")
     system("mode 160, 40")
 os.system("cls" if os.name == "nt" else "clear")
 jawbreaker = """
