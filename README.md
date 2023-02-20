@@ -1,5 +1,5 @@
 # Chương trình HTTP2 Tunnel
-cài đặt chương trình 
+cài đặt chương trình trên 'ubuntu' 'centos'
 ```
 sh setup.sh
 ```
