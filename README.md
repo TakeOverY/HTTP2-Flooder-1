@@ -1,14 +1,11 @@
 # Chương trình HTTP2 Tunnel
-Yêu cầu cài đặt `nodejs`
+cài đặt chương trình 
 ```
-apt -y install nodejs
+sh setup.sh
 ```
+khởi động chương trình
 ```
-npm i http http2 crypto tls
-```
-Yêu cầu cài đặt `python`
-```
-apt install python3-pip
+python3 TLS.py
 ```
 ---------------------------------------------------------------
 
