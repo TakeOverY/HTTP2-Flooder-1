@@ -11,6 +11,6 @@ cd /root/HTTP2-Flooder
 npm i http http2 crypto tls
 yum install wget -y
 cd HTTP2-Flooder
-Clear
+clear
 echo ""
 echo "  Đã cài đặt hoàn tất"
