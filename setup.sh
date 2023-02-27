@@ -1,8 +1,8 @@
 # setup HTTP/2 server ubuntu/centos 
 apt install nodejs -y
 yum install nodejs -y
-apt install python3-pip
-yum install python3-pip
+apt install python3-pip -y
+yum install python3-pip -y
 pip3 install pystyle
 apt install npm -y
 yum install npm -y
