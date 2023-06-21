@@ -5,7 +5,7 @@ sh setup.sh
 ```
 khởi động chương trình
 ```
-python3 TLS.py
+cd /root/HTTP2-Flooder && python3 TLS.py
 ```
 ---------------------------------------------------------------
 
